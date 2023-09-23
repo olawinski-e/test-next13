@@ -3,7 +3,7 @@ import React from 'react'
 import { capitalize } from '../../../utils/capitalize'
 import styles from './Footer.module.scss'
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -27,5 +27,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

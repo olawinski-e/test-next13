@@ -5,7 +5,7 @@ import { AiFillGithub } from 'react-icons/ai'
 import logo from '../../../../../public/images/B&A_logo.svg'
 import styles from './Header.module.scss'
 
-const Header = () => {
+export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -24,5 +24,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header
