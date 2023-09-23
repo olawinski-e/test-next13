@@ -1,27 +1,52 @@
 {
   "compilerOptions": {
+    "baseUrl": "app",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
+    "paths": {
+      "~components": ["./src/app/components"],
+      "~components/*": ["./src/app/components/*"],
+      "~styles": ["./src/app/styles"],
+      "~styles/*": ["./src/app/styles/*"],
+      "~types": ["./src/app/types"],
+      "~types/*": ["./src/app/types/*"],
+      "~utils": ["./src/app/utils"],
+      "~utils/*": ["./src/app/utils/*"]
+    },
+    "incremental": false,
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "**/*.stories.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.tsx"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.scss",
+    "custom.d.ts",
+    ".next/types/**/*.ts"
+  ]
 }

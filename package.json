@@ -6,17 +6,45 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint-code": "eslint . --ext ts --ext tsx --ext js",
+    "lint-staged": "lint-staged",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "npm run lint-code",
+      "npm run format"
+    ]
   },
   "dependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "classnames": "^2.3.2",
     "eslint": "8.49.0",
-    "eslint-config-next": "13.5.2",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-next": "13.4.19",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "lint-staged": "^12.4.1",
     "next": "13.5.2",
+    "prettier": "^2.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-loading-skeleton": "^3.3.1",
+    "sass": "^1.66.1",
+    "stylelint": "^14.8.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "5.2.2"
   }
 }

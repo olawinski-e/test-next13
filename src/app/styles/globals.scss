@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+:root {
+  font-size: 10px;
+
+  --max-width: 120rem;
+  --font-mono: 'Roboto', sans-serif;
+  --size-header: 9rem;
+  --size-footer: 3.8rem;
+  --height-screen: calc(100svh - 12.8rem);
+
+  /* SPACES */
+  --spaces-xxs: 0.4rem;
+  --spaces-xs: 0.8rem;
+  --spaces-s: 1.2rem;
+  --spaces-m: 1.5rem;
+  --spaces-l: 2.4rem;
+  --spaces-xl: 3.2rem;
+  --spaces-2xl: 4rem;
+
+  /* COLORS */
+  --text-color: #333333;
+  --white-color: #fff;
+  --lighten-neutral-color: #f9f9fb;
+  --neutral-color: #b6b6b6;
+  --darken-neutral-color: #a1a1a1;
+  --text-grey-color: #6a696e;
+  --lighten-primary-color: #404b80;
+  --primary-color: #363472;
+  --darken-primary-color: #2f2c63;
+  --lighten-secondary-color: #ffc25b;
+  --secondary-color: #fdb241;
+  --darken-secondary: #e2a935;
+  --success-color: #2ecc40;
+  --darken-success-color: #29b534;
+  --info-color: #3498db;
+  --darken-info-color: #2980b9;
+  --warning-color: #ff851b;
+  --darken-warning-color: #e67517;
+  --danger-color: #ff4136;
+  --darken-danger-color: #e63933;
+
+  /* BUTTON */
+  --button-radius: 0.4rem;
+  --button-font-size: 1.6rem;
+  --button-padding-small: 0.6rem 1rem;
+  --button-padding-medium: 1rem 2rem;
+  --button-padding-large: 1.4rem 2.6rem;
+  --button-padding-wide: 1rem auto;
+
+  /* CARD */
+  --card-border-radius: 0.8rem;
+  --card-padding: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100svh;
+  font-family: var(--font-mono);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}

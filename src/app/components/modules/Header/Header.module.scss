@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: var(--spaces-m) var(--spaces-2xl);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .nav {
+    font-size: 1.8em;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+      }
+    }
+  }
+}

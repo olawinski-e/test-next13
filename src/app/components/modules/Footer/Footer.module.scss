@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  padding: var(--spaces-xs) var(--spaces-xl);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+
+  .container {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

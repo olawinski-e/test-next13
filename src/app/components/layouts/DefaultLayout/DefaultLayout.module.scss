@@ -1,0 +1,13 @@
+.mainContainer {
+  width: 100%;
+  margin-top: var(--size-header);
+  margin-bottom: var(--size-footer);
+  padding: var(--spaces-l);
+  height: var(--height-screen);
+}
+
+@media (min-width: 700px) {
+  .mainContainer {
+    padding: var(--spaces-xl);
+  }
+}
