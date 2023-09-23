@@ -7,7 +7,7 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
   return (
     <>
       <Header />
-      <div className={styles.mainContainer}>{children}</div>
+      <main className={styles.defaultLayoutMain}>{children}</main>
       <Footer />
     </>
   )

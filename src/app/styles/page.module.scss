@@ -1,5 +1,18 @@
-.title {
-  font-size: 2.8rem;
+.homeMain {
+  overflow: hidden;
+  height: 100svh;
+  position: relative;
+
+  .homeContainer {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--spaces-m) var(--spaces-l);
+
+    .homeTitle {
+      font-size: 2.8rem;
+    }
+  }
 }
 
 @media (min-width: 700px) {

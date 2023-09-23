@@ -5,9 +5,11 @@
 
   --max-width: 120rem;
   --font-mono: 'Roboto', sans-serif;
+  --height-screen: 100svh;
   --size-header: 9rem;
-  --size-footer: 3.8rem;
-  --height-screen: calc(100svh - 12.8rem);
+  --size-footer-mobile: 8.2rem;
+  --size-footer-tablet: 6rem;
+  --size-footer-desktop: 3.8rem;
 
   /* SPACES */
   --spaces-xxs: 0.4rem;
@@ -80,6 +82,5 @@ a {
 
 ul {
   list-style: none;
-  display: flex;
   gap: 4rem;
 }

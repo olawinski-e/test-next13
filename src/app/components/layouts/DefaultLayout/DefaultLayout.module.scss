@@ -1,13 +1,21 @@
-.mainContainer {
+.defaultLayoutMain {
   width: 100%;
-  margin-top: var(--size-header);
-  margin-bottom: var(--size-footer);
-  padding: var(--spaces-l);
-  height: var(--height-screen);
+  height: calc(var(--height-screen) - (var(--size-header) + var(--size-footer-mobile)));
+  position: absolute;
+  top: var(--size-header);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+@media (min-width: 394px) {
+  .defaultLayoutMain {
+    height: calc(var(--height-screen) - (var(--size-header) + var(--size-footer-tablet)));
+  }
 }
 
 @media (min-width: 700px) {
-  .mainContainer {
-    padding: var(--spaces-xl);
+  .defaultLayoutMain {
+    height: calc(var(--height-screen) - (var(--size-header) + var(--size-footer-desktop)));
   }
 }
