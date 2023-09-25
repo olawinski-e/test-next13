@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { AiFillGithub } from 'react-icons/ai'
-import logo from '../../../../../public/images/B&A_logo.svg'
+import logo from '../../../../public/images/B&A_logo.svg'
 import styles from './Header.module.scss'
 
 export default function Header() {
@@ -10,7 +10,7 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link href="/">
-          <Image src={logo} width={75} height={60} alt="logo side" />
+          <Image src={logo} width={75} height={60} alt="logo side" priority />
         </Link>
 
         <ul>

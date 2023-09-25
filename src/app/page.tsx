@@ -1,14 +1,16 @@
 import React from 'react'
-import styles from '../../src/app/styles/page.module.scss'
-import DefaultLayout from './components/layouts/DefaultLayout'
+import DefaultLayout from '../components/layouts/DefaultLayout'
+import AddNewTodo from '../components/modules/Todo/AddNewTodo/AddNewTodo'
+import TodoList from '../components/modules/Todo/TodoList/TodoList'
+import styles from '../styles/page.module.scss'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className={styles.homeMain}>
+    <main className={styles.main}>
       <DefaultLayout>
-        <div className={styles.homeContainer}>
-          <h1 className={styles.homeTitle}>Broke And Abroad TO DO</h1>
-        </div>
+        <AddNewTodo />
+
+        <TodoList />
       </DefaultLayout>
     </main>
   )

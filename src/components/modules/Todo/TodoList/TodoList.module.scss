@@ -1,0 +1,38 @@
+.todoListContainer {
+  overflow: auto;
+  width: 100%;
+  padding: var(--spaces-m) var(--spaces-l);
+
+  .todoListUl {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .todoLi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .todoListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .todoListUl {
+      column-gap: 3rem;
+      row-gap: 2rem;
+    }
+
+    .todoLi {
+      width: 30rem;
+    }
+  }
+}

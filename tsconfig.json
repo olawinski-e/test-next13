@@ -15,14 +15,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "~components": ["./src/app/components"],
-      "~components/*": ["./src/app/components/*"],
-      "~styles": ["./src/app/styles"],
-      "~styles/*": ["./src/app/styles/*"],
-      "~types": ["./src/app/types"],
-      "~types/*": ["./src/app/types/*"],
-      "~utils": ["./src/app/utils"],
-      "~utils/*": ["./src/app/utils/*"]
+      "~components": ["src/components"],
+      "~components/*": ["src/components/*"],
+      "~styles": ["src/styles"],
+      "~styles/*": ["src/styles/*"],
+      "~types": ["src/types"],
+      "~types/*": ["src/types/*"],
+      "~utils": ["src/utils"],
+      "~utils/*": ["src/utils/*"]
     },
     "incremental": false,
     "plugins": [

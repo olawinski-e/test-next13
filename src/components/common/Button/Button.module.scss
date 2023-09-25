@@ -1,0 +1,89 @@
+.customButton {
+  background-color: var(--neutral-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: var(--button-radius);
+  font-size: var(--button-font-size);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  &:hover {
+    background-color: var(--darken-neutral-color);
+    color: var(--white-color);
+  }
+
+  &--primary {
+    background-color: var(--primary-color);
+    &:hover {
+      background-color: var(--darken-primary-color);
+      color: var(--white-color);
+    }
+  }
+
+  &--secondary {
+    border: solid 1px var(--primary-color);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    &:hover {
+      background-color: var(--darken-primary-color);
+      color: var(--white-color);
+    }
+  }
+
+  &--info {
+    border: solid 1px var(--info-color);
+    background-color: var(--white-color);
+    color: var(--info-color);
+    &:hover {
+      background-color: var(--darken-info-color);
+      color: var(--white-color);
+    }
+  }
+
+  &--warning {
+    border: solid 1px var(--warning-color);
+    background-color: var(--white-color);
+    color: var(--warning-color);
+    &:hover {
+      background-color: var(--darken-warning-color);
+      color: var(--white-color);
+    }
+  }
+
+  &--danger {
+    border: solid 1px var(--danger-color);
+    background-color: var(--white-color);
+    color: var(--danger-color);
+    &:hover {
+      background-color: var(--darken-danger-color);
+      color: var(--white-color);
+    }
+  }
+
+  &--success {
+    border: solid 1px var(--success-color);
+    background-color: var(--white-color);
+    color: var(--success-color);
+    &:hover {
+      background-color: var(--darken-success-color);
+      color: var(--white-color);
+    }
+  }
+
+  &--size-small {
+    padding: var(--button-padding-small);
+    font-size: 1.3em;
+  }
+  &--size-medium {
+    padding: var(--button-padding-medium);
+    font-size: 1.5em;
+  }
+  &--size-large {
+    padding: var(--button-padding-large);
+    font-size: 1.8em;
+  }
+  &--size-wide {
+    padding: var(--button-padding-wide);
+    width: 100%;
+  }
+}

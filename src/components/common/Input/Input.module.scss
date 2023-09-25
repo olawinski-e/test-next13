@@ -1,0 +1,52 @@
+.customInputText {
+  color: var(--text-grey-color);
+  font-size: 1.25rem;
+  line-height: 1;
+  border-style: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 0.25rem solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      120deg,
+      var(--tertiary-color) 0%,
+      var(--primary-color) 50%,
+      var(--secondary-color) 100%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 1.8rem;
+  background-size: 200% 100%;
+  transition: background-position 0.8s ease-out;
+
+  &:hover {
+    background-position: 100% 0;
+  }
+
+  &:focus {
+    outline: 0.2rem dashed var(--primary-color);
+    outline-offset: 0.5rem;
+  }
+}
+
+.checkbox:focus {
+  outline: none;
+}
+
+.width--full {
+  width: 100%;
+}
+
+.customInputCheckbox {
+  width: 2.9rem;
+  height: 2.9rem;
+  z-index: 6;
+}
+
+@media (min-width: 700px) {
+  .customInputText {
+    width: 35%;
+  }
+}

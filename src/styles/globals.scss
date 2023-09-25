@@ -33,6 +33,9 @@
   --lighten-secondary-color: #ffc25b;
   --secondary-color: #fdb241;
   --darken-secondary: #e2a935;
+  --lighten-tertiary-color: #4e85b6;
+  --tertiary-color: #467bae;
+  --darken-tertiary: #3e709e;
   --success-color: #2ecc40;
   --darken-success-color: #29b534;
   --info-color: #3498db;
@@ -43,7 +46,7 @@
   --darken-danger-color: #e63933;
 
   /* BUTTON */
-  --button-radius: 0.4rem;
+  --button-radius: 2rem;
   --button-font-size: 1.6rem;
   --button-padding-small: 0.6rem 1rem;
   --button-padding-medium: 1rem 2rem;
@@ -51,7 +54,7 @@
   --button-padding-wide: 1rem auto;
 
   /* CARD */
-  --card-border-radius: 0.8rem;
+  --card-border-radius: 1.8rem;
   --card-padding: 2rem;
 }
 
